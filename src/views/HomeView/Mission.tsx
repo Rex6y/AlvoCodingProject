@@ -6,9 +6,32 @@ const { Title, Paragraph } = Typography;
 export default function Mission() {
     return (
         <div style={{
-            backgroundColor: 'white', position: 'relative',
+            backgroundColor: 'white',
+            position: 'relative',
             overflow: 'hidden'
         }}>
+            <div style={{
+                height: '600px', width: '600px', position: 'absolute', backgroundColor: '#5cda95',
+                top: '85%',
+                left: '-13%',
+                transform: 'translate(-50%, -50%)',
+                rotate: '45deg'
+            }} />
+            <div style={{
+                height: '600px', width: '600px', position: 'absolute', backgroundColor: '#5cda95',
+                top: '5%',
+                left: '20%',
+                transform: 'translate(-50%, -50%)',
+                rotate: '45deg'
+            }} />
+            <div style={{
+                height: '900px', width: '900px', position: 'absolute', backgroundColor: '#5cda95',
+                top: '130%',
+                left: '55%',
+                transform: 'translate(-50%, -50%)',
+                rotate: '45deg'
+            }} />
+
             <Row gutter={[24, 24]} align="top">
                 <Col xs={24} md={16} style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end' }}>
                     <Title level={2} style={{ color: 'black', marginBottom: '20px', fontSize: '3.2rem', marginTop: '2rem' }}>
