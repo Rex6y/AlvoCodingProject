@@ -1,6 +1,5 @@
 import React from 'react';
-import { Button, Flex, Image, Typography } from 'antd';
-
+import { Button, Flex, Image, Row, Col, Typography } from 'antd';
 const { Title } = Typography;
 
 export default function Intro() {
@@ -9,23 +8,32 @@ export default function Intro() {
             style={{
                 height: 'calc(100vh - 80px)',
                 position: 'relative',
-                overflow: 'hidden'
+                overflow: 'hidden',
             }}
         >
             <div
                 style={{
-                    background: 'linear-gradient(to bottom right,rgb(127 174 148), rgb(69 150 136))',
+                    background: 'linear-gradient(to bottom right, rgb(127 174 148), rgb(69 150 136))',
                     width: '100%',
                     height: '100%',
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
+                    overflow: 'hidden',
+                    position: 'relative',
                 }}
             >
-                <Image
-                    style={{ width: '100%', height: 'auto' }}
-                    preview={false}
+                <img
+                    style={{ 
+                        width: '100%', 
+                        height: '100%', 
+                        objectFit: 'cover',
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                    }}
                     src="/img/math-transparent-background-1.png"
+                    alt="Background"
                 />
             </div>
             <div
@@ -41,10 +49,10 @@ export default function Intro() {
                 }}
             >
                 <Flex align='center' justify='center'>
-                    <Title style={{ color: "white", margin: 0, fontWeight: 'bold', fontSize: '5rem' }}>HỌC THUẬT TOÁN CÙNG</Title>
-                    <Title style={{ color: 'rgb(92 218 149)', margin: '0 1rem', fontStyle: 'italic', fontWeight: 'bold', fontSize: '5rem' }}>ALVO</Title>
+                    <Title className='Main-title' style={{ color: "white", margin: 0, fontWeight: 'bold', fontSize: '5rem' }}>HỌC THUẬT TOÁN CÙNG</Title>
+                    <Title className='Main-title Special-title' style={{ color: 'rgb(92 218 149)', margin: '0 1rem', fontStyle: 'italic', fontWeight: 'bold', fontSize: '5rem' }}>ALVO</Title>
                 </Flex>
-                <Button type="primary" style={{ fontWeight: 'bold', height: '4rem', width: '13rem', fontSize: '1.2rem', marginTop: '2rem', backgroundColor: 'rgb(92 218 149)', border: '5px solid #fff', borderRadius: '1rem' }}>THAM GIA NGAY</Button>
+                <Button className='Join-button' type="primary" style={{ fontWeight: 'bold', height: '4rem', width: '13rem', fontSize: '1.2rem', marginTop: '2rem', backgroundColor: 'rgb(92 218 149)', border: '5px solid #fff', borderRadius: '1rem' }}>THAM GIA NGAY</Button>
             </div>
         </div>
     );

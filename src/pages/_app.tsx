@@ -22,6 +22,7 @@ import { Provider } from "react-redux";
 // import Cursor, { CursorContextProvider } from "@components/Cursor";
 // Globals CSS
 import "../styles/globals.css";
+import "../styles/main.css";
 // import "../styles/loader.css";
 // import "../styles/pluginsbase.css";
 import BreakpointsContextProvider from "../context/breakpointsContext";

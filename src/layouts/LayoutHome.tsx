@@ -15,19 +15,19 @@ export default function LayoutHome({ children }: { children: ReactNode }) {
                 display: 'flex', alignItems: 'center', background: 'black', height: '5rem',
                 justifyContent: 'space-between'
             }}>
-                <Image src='/img/logo.png' preview={false}
-                    style={{ objectFit: 'cover', height: '4.5rem', paddingRight: '48px' }}
+                <Image src='/img/logo.png' preview={false} className='Header-logo'
+                    style={{ objectFit: 'cover', height: '4.5rem', paddingRight: '5vw' }}
                 />
-                <Radio.Group value='large' defaultValue="home">
-                    <Radio.Button style={{ backgroundColor: 'rgb(92 218 149)' }} value="home"><p style={{ padding: 0, margin: 0, fontWeight: 'bold' }}>Trang chủ</p></Radio.Button>
-                    <Radio.Button value="lectures"><p style={{ padding: 0, margin: 0, fontWeight: 'bold' }}>Bài giảng</p></Radio.Button>
-                    <Radio.Button value="exercises"><p style={{ padding: 0, margin: 0, fontWeight: 'bold' }}>Bài tập</p></Radio.Button>
-                    <Radio.Button value="contests"><p style={{ padding: 0, margin: 0, fontWeight: 'bold' }}>Cuộc thi</p></Radio.Button>
-                    <Radio.Button value="contact"><p style={{ padding: 0, margin: 0, fontWeight: 'bold' }}>Liên hệ</p></Radio.Button>
+                <Radio.Group value='large' defaultValue="home" className='Radio-group'>
+                    <Radio.Button className='Radio-button' style={{ backgroundColor: 'rgb(92 218 149)' }} value="home"><p style={{ padding: 0, margin: 0, fontWeight: 'bold' }}>Trang chủ</p></Radio.Button>
+                    <Radio.Button className='Radio-button' value="lectures"><p style={{ padding: 0, margin: 0, fontWeight: 'bold' }}>Bài giảng</p></Radio.Button>
+                    <Radio.Button className='Radio-button' value="exercises"><p style={{ padding: 0, margin: 0, fontWeight: 'bold' }}>Bài tập</p></Radio.Button>
+                    <Radio.Button className='Radio-button' value="contests"><p style={{ padding: 0, margin: 0, fontWeight: 'bold' }}>Cuộc thi</p></Radio.Button>
+                    <Radio.Button className='Radio-button' value="contact"><p style={{ padding: 0, margin: 0, fontWeight: 'bold' }}>Liên hệ</p></Radio.Button>
                 </Radio.Group>
                 <Flex >
-                    <Button type="link" style={{ color: 'white', padding: 0 }}>Đăng ký |</Button>
-                    <Button type="link" style={{ color: 'rgb(92 218 149)', padding: 0 }}>Đăng nhập</Button>
+                    <Button className='Account-button Register-button' type="link" style={{ color: 'white', paddingLeft: '5vw' }}>Đăng ký |</Button>
+                    <Button className='Account-button Login-button' type="link" style={{ color: 'rgb(92 218 149)', padding: 0 }}>Đăng nhập</Button>
                 </Flex>
             </Header>
             <Content>
