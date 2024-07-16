@@ -21,7 +21,7 @@ import { Provider } from "react-redux";
 // import Curve from "@components/Transitions/Curve";
 // import Cursor, { CursorContextProvider } from "@components/Cursor";
 // Globals CSS
-// import "../styles/globals.css";
+import "../styles/globals.css";
 // import "../styles/loader.css";
 // import "../styles/pluginsbase.css";
 import BreakpointsContextProvider from "../context/breakpointsContext";

@@ -7,8 +7,8 @@ export default function Intro() {
     return (
         <div
             style={{
+                height: 'calc(100vh - 80px)',
                 position: 'relative',
-                height: 'calc(100vh - 100px)',
                 overflow: 'hidden'
             }}
         >
@@ -41,10 +41,10 @@ export default function Intro() {
                 }}
             >
                 <Flex align='center' justify='center'>
-                    <Title style={{ color: "white", margin: 0 }}>HỌC THUẬT TOÁN CÙNG</Title>
-                    <Title style={{ color: 'rgb(92 218 149)', margin: '0 1rem', fontStyle: 'italic' }}>ALVO</Title>
+                    <Title style={{ color: "white", margin: 0, fontWeight: 'bold', fontSize: '5rem' }}>HỌC THUẬT TOÁN CÙNG</Title>
+                    <Title style={{ color: 'rgb(92 218 149)', margin: '0 1rem', fontStyle: 'italic', fontWeight: 'bold', fontSize: '5rem' }}>ALVO</Title>
                 </Flex>
-                <Button type="primary" style={{ height: '3rem', width: '10rem', marginTop: '2rem', backgroundColor: 'rgb(92 218 149)' }}>THAM GIA NGAY</Button>
+                <Button type="primary" style={{ fontWeight: 'bold', height: '4rem', width: '13rem', fontSize: '1.2rem', marginTop: '2rem', backgroundColor: 'rgb(92 218 149)', border: '5px solid #fff', borderRadius: '1rem' }}>THAM GIA NGAY</Button>
             </div>
         </div>
     );

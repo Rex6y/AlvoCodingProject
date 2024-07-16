@@ -5,16 +5,18 @@ const { Title, Paragraph } = Typography;
 
 export default function Mission() {
     return (
-        <div style={{ backgroundColor: '#e0f2f1', padding: '20px' }}>
+        <div style={{
+            backgroundColor: 'white', position: 'relative',
+            overflow: 'hidden'
+        }}>
             <Row gutter={[24, 24]} align="top">
                 <Col xs={24} md={16} style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end' }}>
-                    <Title level={2} style={{ color: 'black', marginBottom: '20px' }}>
+                    <Title level={2} style={{ color: 'black', marginBottom: '20px', fontSize: '3.2rem', marginTop: '2rem' }}>
                         SỨ MỆNH CỦA ALVO MANG ĐẾN
                     </Title>
                     <div style={{
-                        backgroundColor: '#4caf50',
+                        backgroundColor: '#f7ead0',
                         padding: '20px',
-                        clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 85%)',
                         opacity: '0.8'
                     }}>
                         <Paragraph style={{ color: 'black', textAlign: 'right', opacity: '1', fontSize: '24px' }}>
@@ -23,15 +25,34 @@ export default function Mission() {
                     </div>
                 </Col>
                 <Col xs={24} md={8}>
-                    <Image
-                        preview={false}
-                        src="/img/width_413.webp"
-                        alt="Team of tourist, programming competition champions"
-                        style={{ width: '100%', borderRadius: '8px' }}
-                    />
-                    <Paragraph style={{ marginTop: '10px', fontStyle: 'italic', textAlign: 'center' }}>
-                        Team của tourist, nhà vô địch lập trình thi đấu, ăn mừng trong chiến thắng tại kì thi ICPC đánh giá
-                    </Paragraph>
+                    <div style={{
+                        position: 'relative',
+                        overflow: 'hidden'
+                    }}>
+                        <Image
+                            width={'100%'}
+                            height={'100%'}
+                            preview={false}
+                            src="/img/width_413.webp"
+                            alt="Team of tourist, programming competition champions"
+                        />
+                        <Paragraph style={{
+                            fontStyle: 'italic', textAlign: 'center',
+                            background: 'black',
+                            width: '100%',
+                            color: 'white',
+                            position: 'absolute',
+                            left: '50%',
+                            bottom: '0',
+                            transform: 'translate(-50%)',
+                            fontSize: '1.2rem',
+                            margin: 0,
+                            padding: '1rem'
+
+                        }}>
+                            Team của tourist, nhà vô địch lập trình thi đấu, ăn mừng trong chiến thắng tại kì thi ICPC đánh giá
+                        </Paragraph>
+                    </div>
                 </Col>
             </Row>
         </div>

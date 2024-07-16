@@ -45,11 +45,13 @@ export default function LayoutHome({ children }: { children: ReactNode }) {
             <Footer style={{
                 backgroundColor: '#000000',
                 color: '#ffffff',
-                padding: '20px 50px'
+                padding: '0px 50px',
+                position: 'relative'
 
             }}>
+
                 <Row justify="space-between" align="middle">
-                    <Col xs={24} sm={8}>
+                    <Col xs={12} sm={3}>
                         <Menu mode="vertical" theme="dark" style={{ border: 'none', backgroundColor: 'transparent' }}>
                             <Menu.Item key="home">Trang chủ</Menu.Item>
                             <Menu.Item key="lessons">Bài giảng</Menu.Item>
@@ -59,19 +61,32 @@ export default function LayoutHome({ children }: { children: ReactNode }) {
                         </Menu>
                     </Col>
 
-                    <Col xs={24} sm={8}>
+                    <Col xs={12} sm={4}>
                         <div>
-                            <h3>Liên hệ với chúng tôi:</h3>
+                            <h3 style={{ marginBottom: '1rem' }}>Liên hệ với chúng tôi:</h3>
                             <Space size="large">
-                                <YoutubeOutlined style={{ fontSize: '24px', color: '#ff0000' }} />
-                                <MessageOutlined style={{ fontSize: '24px', color: '#ff00ff' }} />
-                                <FacebookOutlined style={{ fontSize: '24px', color: '#4267B2' }} />
+                                <YoutubeOutlined style={{ fontSize: '4rem', color: '#ff0000' }} />
+                                <MessageOutlined style={{ fontSize: '4rem', color: '#ff00ff' }} />
+                                <FacebookOutlined style={{ fontSize: '4rem', color: '#4267B2' }} />
                             </Space>
                         </div>
                     </Col>
-
+                    <Col xs={3} sm={3} style={{ display: 'flex', justifyContent: 'center' }} >
+                        <div style={{
+                            height: '230px', width: '200px', backgroundColor: 'white',
+                            clipPath: 'polygon(0 0, 50% 0, 100% 100%, 50% 100%)'
+                        }} />
+                    </Col >
                     <Col xs={24} sm={8} style={{ textAlign: 'right' }}>
-                        <Image src="/img/logo.png" alt="ALVO" style={{ height: '240px' }} preview={false} />
+                        <div style={{
+                            overflow: 'hidden',
+                            height: '100px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'end',
+                        }}>
+                            <Image src="/img/logo.png" alt="ALVO" style={{ height: '240px' }} preview={false} />
+                        </div>
                         <p style={{ marginTop: '10px', fontSize: '16px' }}>
                             Dự án đem thuật toán đến gần hơn cho học sinh, sinh viên và lập trình viên tại Việt Nam và Thế Giới
                         </p>
